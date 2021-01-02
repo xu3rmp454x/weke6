@@ -1,0 +1,189 @@
+.banner{
+    background-image: url(../perfume-week6/index1.jpg);
+    height: calc(100vh - 46px);
+    background-position: center center;
+    background-size: cover;
+    @include pad(){
+        height: 480px;
+    }
+}
+.nav-PC a{
+    color: $a-link;
+    &:hover{
+        opacity: 0.5;
+    }
+}
+p{
+    font-size: $h5-font-size;
+    @include mobile(){
+        font-size: $font-size-sm;
+    }
+}
+.p-6{
+    padding: 60px 0;
+}
+.md-w-75{
+    @media (min-width:768px) {
+        width: 75%;
+    }
+}
+.titile{
+    font-size:$h1-font-size;
+    line-height: 48px;
+    @include mobile(){
+        font-size:$h2-font-size
+    }
+}
+.productTitle{
+    font-size: $h2-font-size;
+    line-height: 48px;
+    color: #000;
+    font-weight: bold;
+}
+.button{
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.a-link{
+    color: $productTitle-a;
+    line-height: 24px;
+}
+// 產品區
+.product{
+    padding-top: 60px;
+    margin-bottom: 60px;
+    @include pad(){
+        padding-top: 30px;
+        margin-bottom: 0;
+    }
+}
+.product img{
+    height: 555px;
+    @include pad(){
+        height: auto !important;
+    }
+}
+.product-img-xl{
+    min-height: 1080px !important;
+    @include pad(){
+        min-height: 0 !important;
+    }
+}
+.pad-p{
+    @media (max-width:768px) {
+        padding: 0;
+    }
+}
+//介紹
+.present{
+    // margin: 92px auto 0 auto;
+    & h3{
+        font-size: $h4-font-size;
+        font-weight: bold;
+    }
+    & p{
+        margin-bottom: 0;
+    }
+    & li{
+        margin-bottom: 52px;
+    }
+}
+.freeButton{
+    width: 350px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    color: #000;
+    padding: 18px;
+    font-size: $h5-font-size;
+    font-weight: bold;
+    @include pad(){
+        width: 100%;
+    }
+}
+
+.bg-Secondary{
+    background-color: $bg-Secondary;
+    height: 728px;
+    padding: 40px;
+    @include pad(){
+        height: auto;
+        margin-bottom: 40px;
+    }
+    & h4{
+        font-weight: bold;
+    }
+    & del{
+        color: $a-link;
+    }
+    & img{
+        @media (min-width:768px) {
+            min-height: 540px;
+        }
+        @include mobile(){
+            height: 350px;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}
+.introProduct-item{
+    color: #000;
+    &:hover{
+        transform: scale(0.9);
+    }
+    & .Sold-out{
+        font-size: $h4-font-size;
+        color: #fff;
+        position: absolute;
+        top:60%;
+        width: 100px;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -77px;
+        z-index: 11;
+    }
+}
+.intro_special::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    top:0;
+    left: 0;
+    z-index: 10;
+    background-color: #000 !important;
+}
+/*信箱區*/
+.mailBanner{
+    background-image: url(../perfume-week6/index10.jpg);
+    height: 600px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.subscription{
+    align-items: flex-end;
+    height: 600px;
+    padding-bottom: 112px;
+    & h2{
+        color:$a-link;
+    }
+}
+.form-control{
+    height: 60px;
+    border: 2px solid $primary;
+    border-color:$primary;
+}
+.btn-secondary{
+    background-color: $primary;
+    border-radius: 0px 4px 4px 0px;
+    &:hover{
+        background-color: $primary;
+        color: #000;
+        border-color:$primary;
+    }
+}

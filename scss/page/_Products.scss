@@ -1,0 +1,57 @@
+header{
+    background-color: $primary;
+    & .species li{
+        margin-right: 28px;
+    }
+    & a{
+        font-size:$h5-font-size ;
+        padding: 11px 0;
+    }
+}
+.Products{
+    & del{
+        color: $a-link;
+    }
+    & a{
+        color: #000;
+        font-size: $font-size-base;
+    }
+    & img{
+        height: 255px;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+        @media (max-width:400px) {
+            height: 165px;
+        }
+    }
+}
+.object-position-bottom img{
+    object-position: bottom;
+}
+.Products-title{
+    font-size: 16px;
+    line-height: 30px;
+}
+.primary{
+    color: $primary;
+}
+.Pagination{
+    & li{
+        margin-right: 20px;
+    }
+    & a{
+        color: #000;
+        font-size: $h5-font-size;
+        line-height: 30px;
+        &:hover{
+            text-decoration:underline;
+            color:$primary ;
+        }
+    }
+}
+.form-control3{
+    width: 50%;
+    border: 2px solid $bg-Secondary;
+    height: 38px;
+}

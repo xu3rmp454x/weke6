@@ -1,0 +1,72 @@
+/*通用類別*/
+.material-icons{
+    vertical-align: middle;
+}
+body{
+    font-family: PingFangTC-Regular, sans-serif;
+}
+a{
+    transition: all .5s;
+    display: block;
+    color: $text-SecondaryColor;
+    &:hover{
+        text-decoration: none;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+@media(min-width:768px){
+    .py-6{
+        padding: 4rem 0;
+    }
+}
+ul li{
+    list-style-type: none;
+}
+.logo{
+    background-image: url(../perfume-week6/d’Perfume.png);
+    width: 128px;
+    height: 38px;
+    @include hide-text;
+}
+.bg-light{
+    background-color: #fff !important;
+}
+.navbar{
+    @media (max-width:768px) {
+        position: sticky;
+        top:0;
+        left: 0;
+        padding: 0;
+        z-index: 99;
+    }
+}
+.navbar-expand-lg .navbar-collapse{
+    @media (min-width:768px) {
+        display: none !important;
+    }
+}
+.navbar-nav .nav-link{
+    background-color: #707070;
+    font-size:$h5-font-size;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    line-height: 1.6;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+/*表尾*/
+footer{
+    background-color: $bg-primay;
+    color: $text-SecondaryColor;
+    & ul li a{
+        font-size: $h5-font-size;
+    }
+    & ul li a:hover{
+        color: #333;
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香水電商</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-md-around">
+        <h1 class="m-0 pl-2"><a class="navbar-brand logo" href="index.html">Perfume</a></h1>
+        <a href="" class="text-primary ml-auto mr-2 d-md-none"><span class="material-icons">shopping_cart</span>Cart(3)</a>
+        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="d-none nav-PC d-md-flex mb-0">
+            <li class="mr-4">
+                <a href="Products.html"><span class="material-icons">store</span>Product</a>
+            </li>
+            <li class="mr-4">
+                <a href="login.html"><span class="material-icons">person</span>log in</a>
+            </li>
+            <li class="mr-4">
+                <a href="javascript:;"><span class="material-icons">favorite</span>Wishlist</a>
+            </li>
+            <li class="mr-4">
+                <a href="javascript:;"><span class="material-icons">shopping_cart</span>Cart(3)</a>
+            </li>
+        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto d-md-none">
+                <li class="nav-item">
+                    <a class="nav-link" href="Products.html">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:;">Wishlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:;">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:;">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">log in</a>
+                </li>
+            </ul>
+        </div>
+    </nav><!-- nav -->
+    <header class="d-none d-md-block">
+        <div class="container">
+            <ul class="species d-flex align-items-center">
+                <li><a href="javascript:;">CHANEL</a></li>
+                <li><a href="javascript:;">Jo Malone</a></li>
+                <li><a href="javascript:;">Curology</a></li>
+                <li><a href="javascript:;">Dior</a></li>
+                <li><a href="javascript:;">Chloe</a></li>
+                <li><a href="javascript:;">ZARA</a></li>
+            </ul>
+            <!-- Products  -->
+        </div><!-- container -->
+    </header><!-- header -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-3 negative2">
+                <ul class="member-list d-flex justify-content-between d-md-block">
+                    <li class="mb-0 mb-md-4"><a href="javascript:;" class="md-h5 font-weight-bold text-primary">會員中心</a></li>
+                    <li class="mb-0 mb-md-4"><a href="javascript:;">會員資料修改</a></li>
+                    <li class="mb-0 mb-md-4"><a href="javascript:;">訂單查詢</a></li>
+                    <li class="mb-0 mb-md-4"><a href="javascript:;">退／換貨申請</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="pb-3 mb-3">個人資料修改</h3>
+                <form class="mb-3" action="modify.htm">
+                    <div class="form-row">
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="inputAccount " class="mb-0">會員帳號</label>
+                        <input type="email" class="form-control border-0" id="inputEmail3" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="inpunName" class="mb-0">會員姓名</label>
+                        <input type="text" class="form-control" placeholder="輸入姓名">
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                            <label for="inpunsex" class="mb-0">會員性別</label>
+                            <select name="sex" id="" class="form-controlSex">
+                                <option value="girl">女</option>
+                                <option value="man">男</option>
+                            </select>    
+                        </div>
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="inpunMail" class="mb-0">電子信箱</label>
+                        <input type="text" class="form-control" placeholder="email@example.com">
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="tel" class="mb-0">手機號碼</label>
+                        <input type="text" class="form-control" id="phone">
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0">地址</label>
+                        <select name="address" id="" class="address">
+                            <option value="">台灣及離島</option>
+                            <option value="Outlying ">離島</option>
+                            <option value="Taiwan">台灣</option>
+                        </select>
+                      </div><br>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0"></label>
+                        <select name="address" id="" class="address ml-6">
+                            <option value="">請選擇縣市</option>
+                            <option value="Outlying ">桃園市</option>
+                            <option value="Taiwan">台北市</option>
+                        </select>
+                        <select name="address" id="" class="address ml-0 ml-2">
+                            <option value="">區</option>
+                            <option value="Outlying ">楊梅區</option>
+                            <option value="Taiwan">中壢區</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0"></label>
+                        <input type="text" class="form-control ml-6" placeholder="請輸入地址">
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <input type="checkbox" class="ml-6">
+                        <span class="ml-1">我願意收到最新優惠情報</span>
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0">配送地址</label>
+                        <select name="address" id="" class="address ml-7">
+                            <option value="">台灣及離島</option>
+                            <option value="Outlying ">離島</option>
+                            <option value="Taiwan">台灣</option>
+                        </select>
+                      </div><br>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0"></label>
+                        <select name="address" id="" class="address ml-6">
+                            <option value="">請選擇縣市</option>
+                            <option value="Outlying ">桃園市</option>
+                            <option value="Taiwan">台北市</option>
+                        </select>
+                        <select name="address" id="" class="address ml-0 ml-2">
+                            <option value="">區</option>
+                            <option value="Outlying ">楊梅區</option>
+                            <option value="Taiwan">中壢區</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0"></label>
+                        <input type="text" class="form-control ml-6" placeholder="請輸入地址">
+                      </div>
+                      <div class="form-group col-12 d-flex align-items-center">
+                        <label for="address" class="mb-0"></label>
+                        <button type="submit" class="btn btn-secondary ml-6">確定修改</button>
+                      </div>
+                    </div><!-- form-row -->
+                </form>
+                <h3 class="pb-3 mb-3">修改密碼</h3>
+                <form action="modify.htm">
+                    <div class="form-row">
+                        <div class="form-group col-12 d-flex align-items-center">
+                            <label for="password" class="mb-0">舊密碼</label>
+                            <input type="password" class="form-control ml-8" id="inputPassword3" placeholder="Password">
+                        </div>
+                        <div class="form-group col-12 d-flex align-items-center">
+                            <label for="password" class="mb-0">新密碼</label>
+                            <input type="password" class="form-control ml-8" id="inputPassword3" placeholder="新密碼">
+                        </div>
+                        <div class="form-group col-12 d-flex align-items-center">
+                            <label for="password" class="mb-0">確認碼</label>
+                            <input type="password" class="form-control ml-8" id="inputPassword3" placeholder="確認密碼">
+                        </div>
+                        <div class="form-group col-12 d-flex align-items-center">
+                            <label for="address" class="mb-0"></label>
+                            <button type="submit" class="btn btn-secondary ml-6">變更密碼</button>
+                        </div>
+                    </div><!-- form-row -->
+                </form>
+            </div><!-- NAaa -->
+            <div class="col-12 col-md-3 negative cart-page">
+                <div class="row mb-3">
+                    <span class="material-icons col-1 col-md-2">person</span>
+                    <h5 class="col-11 col-md-10">會員編碼<span class="ml-2">T00020080615</span></h5>
+                </div>
+                <ul class="cart-page">
+                    <li class="row mb-2">
+                        <p class="col-4 col-md-6">購物車</p>
+                        <p class="col-8 col-md-6">56</p>
+                    </li>
+                    <li class="row mb-2">
+                        <p class="col-4 col-md-6">我的收藏</p>
+                        <p class="col-8 col-md-6">23</p>
+                    </li>
+                    <li class="row mb-2">
+                        <p class="col-4 col-md-6">完成訂單</p>
+                        <p class="col-8 col-md-6">8</p>
+                    </li>
+                    <li class="row mb-2">
+                        <p class="col-4 col-md-6">會員紅利</p>
+                        <p class="col-8 col-md-6">2680</p>
+                    </li>
+                    <li class="row mb-2">
+                        <p class="col-4 col-md-6">邀請碼</p>
+                        <p class="col-8 col-md-6">TK2075</p>
+                    </li>
+                </ul>
+                <p class="text-sm">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+            </div>
+        </div>
+    </div><!-- container -->
+    <footer class="pt-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 p-0">
+                    <div class="d-flex align-items-center">
+                        <a href="index.html" class="pl-3 pl-md-0"><img src="/perfume-week6/d’Perfumewhite.png" alt="" class="mr-4"></a>
+                        <p class="mt-3 ml-auto mr-3 mr-md-0">© 2020. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0 d-none d-md-flex">
+                    <ul class="d-flex py-2 justify-content-end ml-md-auto">
+                        <li class="mr-4"><a href="Products.html">Product</a></li>
+                        <li class="mr-4"><a href="javascript:;">Blog</a></li>
+                        <li class="mr-5"><a href="javascript:;">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--row-->
+        </div><!-- container -->
+    </footer><!-- footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

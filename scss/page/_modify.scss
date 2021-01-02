@@ -1,0 +1,86 @@
+.member-list{
+    & a{
+        color: $a-link;
+        &::after{
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: seagreen;
+            display: block;
+            transition: all .5s;
+        }
+        @include mobile{
+            font-size: 12px;
+        }
+    }
+    & a:hover::after{
+        width: 50%;
+    }
+}
+h3{
+    border-bottom: 1px solid #818A91;
+}
+form{
+    color: $a-link;
+}
+.form-control{
+    width: 66% !important;
+    margin-left: 41px ;
+    height: 38px !important;
+    border: 2px solid #CED4DA;
+    height: 38px;
+}
+.form-controlSex{
+    margin-left: 41px;
+    border: 2px solid #CED4DA;
+    width: 60px;
+    height: 38px;
+    border-radius: .25rem;
+}
+.address{
+    margin-left: 72px;
+    width: 160px;
+    height: 38px;
+    border: 2px solid #CED4DA;
+    color: $a-link;
+    border-radius: .25rem;
+}
+.ml-6{
+    margin-left: 103px;
+}
+.ml-7{
+    margin-left: 39px;
+}
+.ml-8{
+    margin-left: 55px;
+}
+.btn-secondary{
+    border-radius: 4px;
+    width: 160px;
+}
+.negative{
+    order: -1;
+    @media (min-width:767px) {
+        order: 0;
+    }
+}
+.negative2{
+    order: -2;
+    @media (min-width:767px) {
+        order: 0;
+    }
+}
+.cart-page{
+    & h5{
+        display: contents;
+        font-size:$font-size-base;
+        color: $a-link;
+    }
+    & p{
+        font-size:$font-size-base;
+        color: $a-link;
+    }
+    & .text-sm{
+        font-size:12px;
+    }
+}

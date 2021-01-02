@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/*通用類別*/
+.material-icons {
+  vertical-align: middle;
+}
+
+body {
+  font-family: PingFangTC-Regular, sans-serif;
+}
+
+a {
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  display: block;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .py-6 {
+    padding: 4rem 0;
+  }
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.logo {
+  background-image: url(../perfume-week6/d’Perfume.png);
+  width: 128px;
+  height: 38px;
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 99;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+}
+
+.navbar-nav .nav-link {
+  background-color: #707070;
+  font-size: 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  line-height: 1.6;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+/*表尾*/
+footer {
+  background-color: #916019;
+  color: #fff;
+}
+
+footer ul li a {
+  font-size: 1.25rem;
+}
+
+footer ul li a:hover {
+  color: #333;
+  opacity: 0.5;
+}
+
+.banner {
+  background-image: url(../perfume-week6/index1.jpg);
+  height: calc(100vh - 46px);
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 769px) {
+  .banner {
+    height: 480px;
+  }
+}
+
+.nav-PC a {
+  color: #8D8D8D;
+}
+
+.nav-PC a:hover {
+  opacity: 0.5;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 567px) {
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+.p-6 {
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .md-w-75 {
+    width: 75%;
+  }
+}
+
+.titile {
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+
+@media (max-width: 567px) {
+  .titile {
+    font-size: 2rem;
+  }
+}
+
+.productTitle {
+  font-size: 2rem;
+  line-height: 48px;
+  color: #000;
+  font-weight: bold;
+}
+
+.button {
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.a-link {
+  color: #AC8A46;
+  line-height: 24px;
+}
+
+.product {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 769px) {
+  .product {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.product img {
+  height: 555px;
+}
+
+@media (max-width: 769px) {
+  .product img {
+    height: auto !important;
+  }
+}
+
+.product-img-xl {
+  min-height: 1080px !important;
+}
+
+@media (max-width: 769px) {
+  .product-img-xl {
+    min-height: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .pad-p {
+    padding: 0;
+  }
+}
+
+.present h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.present p {
+  margin-bottom: 0;
+}
+
+.present li {
+  margin-bottom: 52px;
+}
+
+.freeButton {
+  width: 350px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  color: #000;
+  padding: 18px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+@media (max-width: 769px) {
+  .freeButton {
+    width: 100%;
+  }
+}
+
+.bg-Secondary {
+  background-color: #E0E0E0;
+  height: 728px;
+  padding: 40px;
+}
+
+@media (max-width: 769px) {
+  .bg-Secondary {
+    height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.bg-Secondary h4 {
+  font-weight: bold;
+}
+
+.bg-Secondary del {
+  color: #8D8D8D;
+}
+
+@media (min-width: 768px) {
+  .bg-Secondary img {
+    min-height: 540px;
+  }
+}
+
+@media (max-width: 567px) {
+  .bg-Secondary img {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+}
+
+.introProduct-item {
+  color: #000;
+}
+
+.introProduct-item:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.introProduct-item .Sold-out {
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -77px;
+  z-index: 11;
+}
+
+.intro_special::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #000 !important;
+}
+
+/*信箱區*/
+.mailBanner {
+  background-image: url(../perfume-week6/index10.jpg);
+  height: 600px;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.subscription {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 600px;
+  padding-bottom: 112px;
+}
+
+.subscription h2 {
+  color: #8D8D8D;
+}
+
+.form-control {
+  height: 60px;
+  border: 2px solid #916019;
+  border-color: #916019;
+}
+
+.btn-secondary {
+  background-color: #916019;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.btn-secondary:hover {
+  background-color: #916019;
+  color: #000;
+  border-color: #916019;
+}
+
+header {
+  background-color: #916019;
+}
+
+header .species li {
+  margin-right: 28px;
+}
+
+header a {
+  font-size: 1.25rem;
+  padding: 11px 0;
+}
+
+.Products del {
+  color: #8D8D8D;
+}
+
+.Products a {
+  color: #000;
+  font-size: 1rem;
+}
+
+.Products img {
+  height: 255px;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .Products img {
+    height: 165px;
+  }
+}
+
+.object-position-bottom img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.Products-title {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.primary {
+  color: #916019;
+}
+
+.Pagination li {
+  margin-right: 20px;
+}
+
+.Pagination a {
+  color: #000;
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.Pagination a:hover {
+  text-decoration: underline;
+  color: #916019;
+}
+
+.form-control3 {
+  width: 50%;
+  border: 2px solid #E0E0E0;
+  height: 38px;
+}
+
+.mb-6 {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 769px) {
+  .mb-6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Pc-show {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.Plr-1 {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .Plr-1 {
+    padding: 0;
+  }
+}
+
+.price {
+  font-size: 1.25rem;
+}
+
+.custom-select {
+  height: 50px;
+  border: 1px solid #916019;
+  border-radius: .25rem 0 0 .25rem;
+}
+
+.btn-primary {
+  background-color: #916019;
+  height: 50px;
+  border-radius: 0 .25rem .25rem 0;
+  border-color: #916019;
+}
+
+.btn-primary:hover {
+  background-color: #916019;
+  border-color: #916019;
+  color: aquamarine;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+.password {
+  color: #916019;
+}
+
+.form-control2 {
+  border: 2px solid #CED4DA;
+  height: 38px;
+  width: 100% !important;
+  margin-left: 0;
+}
+
+.registered {
+  border: 1px solid #916019;
+  color: #916019;
+}
+
+.Signin {
+  border: 1px solid #916019;
+  background-color: #916019;
+  color: #fff;
+}
+
+.member-list a {
+  color: #8D8D8D;
+}
+
+.member-list a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: seagreen;
+  display: block;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+@media (max-width: 567px) {
+  .member-list a {
+    font-size: 12px;
+  }
+}
+
+.member-list a:hover::after {
+  width: 50%;
+}
+
+h3 {
+  border-bottom: 1px solid #818A91;
+}
+
+form {
+  color: #8D8D8D;
+}
+
+.form-control {
+  width: 66% !important;
+  margin-left: 41px;
+  height: 38px !important;
+  border: 2px solid #CED4DA;
+  height: 38px;
+}
+
+.form-controlSex {
+  margin-left: 41px;
+  border: 2px solid #CED4DA;
+  width: 60px;
+  height: 38px;
+  border-radius: .25rem;
+}
+
+.address {
+  margin-left: 72px;
+  width: 160px;
+  height: 38px;
+  border: 2px solid #CED4DA;
+  color: #8D8D8D;
+  border-radius: .25rem;
+}
+
+.ml-6 {
+  margin-left: 103px;
+}
+
+.ml-7 {
+  margin-left: 39px;
+}
+
+.ml-8 {
+  margin-left: 55px;
+}
+
+.btn-secondary {
+  border-radius: 4px;
+  width: 160px;
+}
+
+.negative {
+  -webkit-box-ordinal-group: 0;
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+@media (min-width: 767px) {
+  .negative {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.negative2 {
+  -webkit-box-ordinal-group: -1;
+  -webkit-order: -2;
+      -ms-flex-order: -2;
+          order: -2;
+}
+
+@media (min-width: 767px) {
+  .negative2 {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.cart-page h5 {
+  display: contents;
+  font-size: 1rem;
+  color: #8D8D8D;
+}
+
+.cart-page p {
+  font-size: 1rem;
+  color: #8D8D8D;
+}
+
+.cart-page .text-sm {
+  font-size: 12px;
+}
+/*# sourceMappingURL=all.css.map */
