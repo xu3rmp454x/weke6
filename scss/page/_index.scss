@@ -61,10 +61,13 @@ p{
     }
 }
 .product img{
+    width: 555px;
     height: 555px;
-    @include pad(){
-        height: auto !important;
-    }
+    object-fit: cover;
+    object-position: center;
+    // @include pad(){
+    //     height: auto !important;
+    // }
 }
 .product-img-xl{
     min-height: 1080px !important;
@@ -120,6 +123,8 @@ p{
         color: $a-link;
     }
     & img{
+        object-position: center;
+        object-fit: cover;
         @media (min-width:768px) {
             min-height: 540px;
         }
@@ -132,8 +137,10 @@ p{
 }
 .introProduct-item{
     color: #000;
-    &:hover{
-        transform: scale(0.9);
+    @media (min-width:1024px) {
+        &:hover{
+            transform: scale(0.9);
+        }
     }
     & .Sold-out{
         font-size: $h4-font-size;
