@@ -133,6 +133,10 @@ p {
   }
 }
 
+.today {
+  text-shadow: 4px 4px 5px #000;
+}
+
 .titile {
   font-size: 2.5rem;
   line-height: 48px;
@@ -162,6 +166,7 @@ p {
 .a-link {
   color: #AC8A46;
   line-height: 24px;
+  display: inline-block;
 }
 
 .product {
@@ -185,6 +190,12 @@ p {
      object-position: center;
 }
 
+@media (max-width: 567px) {
+  .product img {
+    height: 350px;
+  }
+}
+
 .product-img-xl {
   min-height: 1080px !important;
 }
@@ -201,21 +212,21 @@ p {
   }
 }
 
-.present h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.PC-width h4 {
+  font-size: 24px;
 }
 
-.present p {
-  margin-bottom: 0;
+.PC-width p {
+  font-size: 1rem;
 }
 
-.present li {
-  margin-bottom: 52px;
+@media (min-width: 1024px) {
+  .PC-width {
+    width: 370px;
+  }
 }
 
 .freeButton {
-  width: 350px;
   border: 1px solid #000;
   border-radius: 30px;
   text-align: center;
@@ -223,12 +234,6 @@ p {
   padding: 18px;
   font-size: 1.25rem;
   font-weight: bold;
-}
-
-@media (max-width: 769px) {
-  .freeButton {
-    width: 100%;
-  }
 }
 
 .bg-Secondary {
@@ -330,6 +335,7 @@ p {
 
 .subscription h2 {
   color: #8D8D8D;
+  text-shadow: 4px 4px 4px #8D8D8D;
 }
 
 .form-control {
@@ -340,6 +346,7 @@ p {
 
 .btn-secondary {
   background-color: #916019;
+  width: auto;
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -386,9 +393,8 @@ header a {
   }
 }
 
-.object-position-bottom img {
-  -o-object-position: bottom;
-     object-position: bottom;
+.Products span {
+  cursor: pointer;
 }
 
 .Products-title {
@@ -419,6 +425,12 @@ header a {
   width: 50%;
   border: 2px solid #E0E0E0;
   height: 38px;
+}
+
+.modal-body {
+  background-color: #E0E0E0;
+  color: #916019;
+  border-radius: 3px;
 }
 
 .mb-6 {
@@ -569,7 +581,7 @@ form {
 
 .btn-secondary {
   border-radius: 4px;
-  width: 160px;
+  width: auto;
 }
 
 .negative {

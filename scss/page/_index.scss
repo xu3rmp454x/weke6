@@ -27,6 +27,9 @@ p{
         width: 75%;
     }
 }
+.today{
+    text-shadow: 4px 4px 5px #000;
+}
 .titile{
     font-size:$h1-font-size;
     line-height: 48px;
@@ -50,6 +53,7 @@ p{
 .a-link{
     color: $productTitle-a;
     line-height: 24px;
+    display: inline-block;
 }
 // 產品區
 .product{
@@ -65,9 +69,9 @@ p{
     height: 555px;
     object-fit: cover;
     object-position: center;
-    // @include pad(){
-    //     height: auto !important;
-    // }
+    @include mobile(){
+        height: 350px;
+    }
 }
 .product-img-xl{
     min-height: 1080px !important;
@@ -81,21 +85,18 @@ p{
     }
 }
 //介紹
-.present{
-    // margin: 92px auto 0 auto;
-    & h3{
-        font-size: $h4-font-size;
-        font-weight: bold;
+.PC-width{
+    & h4{
+        font-size: 24px;
     }
     & p{
-        margin-bottom: 0;
+        font-size: $font-size-base;
     }
-    & li{
-        margin-bottom: 52px;
+    @media (min-width:1024px) {
+        width: 370px;
     }
 }
 .freeButton{
-    width: 350px;
     border: 1px solid #000;
     border-radius: 30px;
     text-align: center;
@@ -103,9 +104,6 @@ p{
     padding: 18px;
     font-size: $h5-font-size;
     font-weight: bold;
-    @include pad(){
-        width: 100%;
-    }
 }
 
 .bg-Secondary{
@@ -178,6 +176,7 @@ p{
     padding-bottom: 112px;
     & h2{
         color:$a-link;
+        text-shadow: 4px 4px 4px $a-link;
     }
 }
 .form-control{
@@ -187,6 +186,7 @@ p{
 }
 .btn-secondary{
     background-color: $primary;
+    width: auto;
     border-radius: 0px 4px 4px 0px;
     &:hover{
         background-color: $primary;

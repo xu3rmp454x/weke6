@@ -25,9 +25,9 @@ header{
             height: 165px;
         }
     }
-}
-.object-position-bottom img{
-    object-position: bottom;
+    & span{
+        cursor: pointer;
+    }
 }
 .Products-title{
     font-size: 16px;
@@ -54,4 +54,9 @@ header{
     width: 50%;
     border: 2px solid $bg-Secondary;
     height: 38px;
+}
+.modal-body{
+    background-color: $bg-Secondary;
+    color: $primary;
+    border-radius: 3px;
 }

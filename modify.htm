@@ -6,12 +6,12 @@
     <title>香水電商</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,500;1,900&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-md-around">
@@ -83,16 +83,16 @@
                     <div class="form-row">
                       <div class="form-group col-12 d-flex align-items-center">
                         <label for="inputAccount " class="mb-0">會員帳號</label>
-                        <input type="email" class="form-control border-0" id="inputEmail3" placeholder="email@example.com">
+                        <input type="email" class="form-control border-0" id="inputAccount" placeholder="email@example.com">
                       </div>
                       <div class="form-group col-12 d-flex align-items-center">
                         <label for="inpunName" class="mb-0">會員姓名</label>
-                        <input type="text" class="form-control" placeholder="輸入姓名">
+                        <input type="text" class="form-control" id="inpunName" placeholder="輸入姓名">
                       </div>
                       <div class="form-group col-12 d-flex align-items-center">
                         <div class="d-flex align-items-center">
                             <label for="inpunsex" class="mb-0">會員性別</label>
-                            <select name="sex" id="" class="form-controlSex">
+                            <select name="sex" id="inpunsex" class="form-controlSex">
                                 <option value="girl">女</option>
                                 <option value="man">男</option>
                             </select>    
@@ -100,15 +100,15 @@
                       </div>
                       <div class="form-group col-12 d-flex align-items-center">
                         <label for="inpunMail" class="mb-0">電子信箱</label>
-                        <input type="text" class="form-control" placeholder="email@example.com">
+                        <input type="text" class="form-control" id="inpunMail" placeholder="email@example.com">
                       </div>
                       <div class="form-group col-12 d-flex align-items-center">
                         <label for="tel" class="mb-0">手機號碼</label>
-                        <input type="tel" class="form-control" id="phone">
+                        <input type="tel" class="form-control" id="tel">
                       </div>
                       <div class="form-group col-12 d-flex align-items-center">
                         <label for="address" class="mb-0">地址</label>
-                        <select name="address" id="" class="address">
+                        <select name="address" id="address" class="address">
                             <option value="">台灣及離島</option>
                             <option value="Outlying ">離島</option>
                             <option value="Taiwan">台灣</option>
@@ -136,16 +136,16 @@
                         <span class="ml-1">我願意收到最新優惠情報</span>
                       </div>
                       <div class="form-group col-12 d-flex align-items-center">
-                        <label for="address" class="mb-0">配送地址</label>
-                        <select name="address" id="" class="address ml-7">
+                        <label for="address2" class="mb-0">配送地址</label>
+                        <select name="address" id="address2" class="address ml-7">
                             <option value="">台灣及離島</option>
                             <option value="Outlying ">離島</option>
                             <option value="Taiwan">台灣</option>
                         </select>
                       </div><br>
                       <div class="form-group col-12 d-flex align-items-center">
-                        <label for="address" class="mb-0"></label>
-                        <select name="address" id="" class="address ml-6">
+                        <label for="address2" class="mb-0"></label>
+                        <select name="address" id="address2" class="address ml-6">
                             <option value="">請選擇縣市</option>
                             <option value="Outlying ">桃園市</option>
                             <option value="Taiwan">台北市</option>
@@ -171,18 +171,18 @@
                     <div class="form-row">
                         <div class="form-group col-12 d-flex align-items-center">
                             <label for="password" class="mb-0">舊密碼</label>
-                            <input type="password" class="form-control ml-8" id="inputPassword3" placeholder="Password">
+                            <input type="password" class="form-control ml-8" id="password" placeholder="Password">
                         </div>
                         <div class="form-group col-12 d-flex align-items-center">
-                            <label for="password" class="mb-0">新密碼</label>
-                            <input type="password" class="form-control ml-8" id="inputPassword3" placeholder="新密碼">
+                            <label for="NewPassword" class="mb-0">新密碼</label>
+                            <input type="password" class="form-control ml-8" id="NewPassword" placeholder="新密碼">
                         </div>
                         <div class="form-group col-12 d-flex align-items-center">
-                            <label for="password" class="mb-0">確認碼</label>
-                            <input type="password" class="form-control ml-8" id="inputPassword3" placeholder="確認密碼">
+                            <label for="verify" class="mb-0">確認碼</label>
+                            <input type="password" class="form-control ml-8" id="verify" placeholder="確認密碼">
                         </div>
                         <div class="form-group col-12 d-flex align-items-center">
-                            <label for="address" class="mb-0"></label>
+                            <!-- <label for="address" class="mb-0"></label> -->
                             <button type="submit" class="btn btn-secondary ml-6">變更密碼</button>
                         </div>
                     </div><!-- form-row -->
