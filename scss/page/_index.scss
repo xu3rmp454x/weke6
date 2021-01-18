@@ -73,6 +73,9 @@ p{
         height: 350px;
     }
 }
+.product li:nth-child(3) img{
+    object-position: left;
+}
 .product-img-xl{
     min-height: 1080px !important;
     @include pad(){
@@ -88,6 +91,7 @@ p{
 .PC-width{
     & h4{
         font-size: 24px;
+        line-height: 36px;
     }
     & p{
         font-size: $font-size-base;
@@ -95,15 +99,18 @@ p{
     @media (min-width:1024px) {
         width: 370px;
     }
+    @include pad(){
+        width: 100%;
+    }
 }
 .freeButton{
     border: 1px solid #000;
     border-radius: 30px;
     text-align: center;
     color: #000;
-    padding: 18px;
+    padding: 14px;
     font-size: $h5-font-size;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .bg-Secondary{
@@ -140,6 +147,10 @@ p{
             transform: scale(0.9);
         }
     }
+}
+.introProduct-item-sold{
+    color: #000000;
+
     & .Sold-out{
         font-size: $h4-font-size;
         color: #fff;
