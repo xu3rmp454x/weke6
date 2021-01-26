@@ -49,6 +49,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+.mt-8{
+    margin-top: 8rem;
+}
 @media(min-width:768px){
     .py-6{
         padding: 4rem 0;
@@ -58,9 +61,9 @@ ul li{
     list-style-type: none;
 }
 .logo{
-    background-image: url(../perfume-week6/d’Perfume.png);
-    width: 128px;
-    height: 38px;
+    background-image: url(../perfume-week6/logo.jpg);
+    width: 198px;
+    height: 100px;
     @include hide-text;
 }
 .bg-light{

@@ -4,6 +4,13 @@
         margin-bottom: 20px;
     }
 }
+.img-h-5{
+    min-height: 540px;
+    object-fit: cover;
+    @include pad(){
+        height: auto;
+    }
+}
 .Pc-show{
     @media (min-width:768px) {
         position: absolute;

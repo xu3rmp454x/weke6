@@ -63,6 +63,10 @@ img {
   height: auto;
 }
 
+.mt-8 {
+  margin-top: 8rem;
+}
+
 @media (min-width: 768px) {
   .py-6 {
     padding: 4rem 0;
@@ -74,9 +78,9 @@ ul li {
 }
 
 .logo {
-  background-image: url(../perfume-week6/d’Perfume.png);
-  width: 128px;
-  height: 38px;
+  background-image: url(../perfume-week6/logo.jpg);
+  width: 198px;
+  height: 100px;
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -147,7 +151,7 @@ button:focus {
 
 /*表尾*/
 footer {
-  background-color: #1b1b1b;
+  background-color: #006837;
   color: #fff;
 }
 
@@ -270,9 +274,9 @@ p {
   }
 }
 
-.product li:nth-child(3) img {
-  -o-object-position: left;
-     object-position: left;
+.product li:nth-child(2) img {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .product-img-xl {
@@ -430,24 +434,24 @@ p {
 
 .form-control {
   height: 60px;
-  border: 2px solid #1b1b1b;
-  border-color: #1b1b1b;
+  border: 2px solid #006837;
+  border-color: #006837;
 }
 
 .btn-secondary {
-  background-color: #1b1b1b;
+  background-color: #006837;
   width: auto;
   border-radius: 0px 4px 4px 0px;
 }
 
 .btn-secondary:hover {
-  background-color: #1b1b1b;
+  background-color: #006837;
   color: #000;
-  border-color: #1b1b1b;
+  border-color: #006837;
 }
 
 header {
-  background-color: #1b1b1b;
+  background-color: #006837;
 }
 
 header .species li {
@@ -493,7 +497,7 @@ header a {
 }
 
 .primary {
-  color: #1b1b1b;
+  color: #006837;
 }
 
 .Pagination li {
@@ -508,7 +512,7 @@ header a {
 
 .Pagination a:hover {
   text-decoration: underline;
-  color: #1b1b1b;
+  color: #006837;
 }
 
 .form-control3 {
@@ -519,7 +523,7 @@ header a {
 
 .modal-body {
   background-color: #E0E0E0;
-  color: #1b1b1b;
+  color: #006837;
   border-radius: 3px;
 }
 
@@ -530,6 +534,18 @@ header a {
 @media (max-width: 769px) {
   .mb-6 {
     margin-bottom: 20px;
+  }
+}
+
+.img-h-5 {
+  min-height: 540px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 769px) {
+  .img-h-5 {
+    height: auto;
   }
 }
 
@@ -556,20 +572,20 @@ header a {
 
 .custom-select {
   height: 50px;
-  border: 1px solid #1b1b1b;
+  border: 1px solid #006837;
   border-radius: .25rem 0 0 .25rem;
 }
 
 .btn-primary {
-  background-color: #1b1b1b;
+  background-color: #006837;
   height: 50px;
   border-radius: 0 .25rem .25rem 0;
-  border-color: #1b1b1b;
+  border-color: #006837;
 }
 
 .btn-primary:hover {
-  background-color: #1b1b1b;
-  border-color: #1b1b1b;
+  background-color: #006837;
+  border-color: #006837;
   color: aquamarine;
 }
 
@@ -578,7 +594,7 @@ header a {
 }
 
 .password {
-  color: #1b1b1b;
+  color: #006837;
 }
 
 .form-control2 {
@@ -589,13 +605,13 @@ header a {
 }
 
 .registered {
-  border: 1px solid #1b1b1b;
-  color: #1b1b1b;
+  border: 1px solid #006837;
+  color: #006837;
 }
 
 .Signin {
-  border: 1px solid #1b1b1b;
-  background-color: #1b1b1b;
+  border: 1px solid #006837;
+  background-color: #006837;
   color: #fff;
 }
 
