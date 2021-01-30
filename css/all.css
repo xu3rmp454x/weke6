@@ -174,12 +174,25 @@ footer ul li a:hover {
   background-image: url(../perfume-week6/index1.jpg);
   height: calc(100vh - 46px);
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 769px) {
   .banner {
     height: 480px;
+  }
+}
+
+@media (max-width: 567px) {
+  .banner {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 300px;
   }
 }
 
@@ -256,6 +269,12 @@ p {
   .product {
     padding-top: 30px;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 567px) {
+  .product {
+    padding-top: 0;
   }
 }
 
